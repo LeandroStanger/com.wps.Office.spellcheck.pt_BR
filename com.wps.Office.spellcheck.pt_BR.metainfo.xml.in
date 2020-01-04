@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.wps.Office.spellcheck.pt_BR</id>
+  <extends>com.wps.Office</extends>
+  <name>Corretor ortográfico em pt_BR</name>
+  <summary>Corretor ortográfico para lingua pt_BR</summary>
+  <project_license>@DICT_LICENSE@</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+</component>

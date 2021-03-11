@@ -15,4 +15,4 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions@v2
       with:
         bundle: "Verificação ortográfica pr_BR.flatpak"
-        manifest-path: " com.wps.Office.spellcheck.pt_BR/com.wps.Office.spellcheck.pt_BR.yml.in"
+        manifest-path: "com.wps.Office.spellcheck.pt_BR.yml.in"

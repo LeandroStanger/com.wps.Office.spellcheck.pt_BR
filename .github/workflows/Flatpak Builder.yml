@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [master]
+  pull_request:
+name: CI
+jobs:
+  flatpak-builder:
+    name: "Flatpak Builder"
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/bilelmoussaoui/flatpak-github-actions
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions@v2
+      with:
+        bundle: "Verificação ortográfica pr_BR.flatpak"
+        manifest-path: " com.wps.Office.spellcheck.pt_BR/com.wps.Office.spellcheck.pt_BR.yml.in"

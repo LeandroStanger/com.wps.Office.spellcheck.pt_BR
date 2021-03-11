@@ -19,14 +19,14 @@ com.wps.Office.spellcheck.%.metainfo.xml:
 		-e "s/Dicionário em português Brasil/$(Dicionário em português Brasil)/g" \
 		-e "s/Dicionário de verificação ortográfica para o idioma português Brasil/$(Dicionário de verificação ortográfica para o idioma português Brasil)/g" \
 		-e "s/DICT_LICENSE/$(DICT_LICENSE)/g" \
-		com.wps.Office.spellcheck.pt_BR.metainfo.xml.in > $@
+		com.wps.Office.spellcheck.pt_BR.metainfo.xml > $@
 
 com.wps.Office.spellcheck.%.yml:
 	sed \
 		-e "s/pt_BR/$*/g" \
 		-e "s/@DICT_SHA256@/$(DICT_SHA256)/g" \
 		-e "s/@DICT_SIZE@/$(DICT_SIZE)/g" \
-		com.wps.Office.spellcheck.pt_BR.yml.in > $@
+		com.wps.Office.spellcheck.pt_BR.yml > $@
 
 clean-manifests:
 	rm -f com.wps.Office.spellcheck.pt_BR.yml
